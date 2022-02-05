@@ -1,0 +1,79 @@
+---
+title: "Create Physeq"
+author: "Ronja Steinbach -- ronja36@hawaii.edu"
+date: "Update: 11/11/21"
+output:
+  html_document:
+    code_folding: hide
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+```{r setup chunk, setup, include = FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+if (!require('knitr')) install.packages('knitr'); library('knitr')
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, fig.align='center')
+########## Load packages
+# load packages
+if (!require("pacman")) install.packages("pacman") # for rapid install if not in library
+
+# use pacman to load all the packages you are missing!
+pacman::p_load('knitr', 'lme4', 'lmerTest', 'effects', 'dplyr', 'plotrix', 'car', 'bookdown')
+
+library(phyloseq); packageVersion("phyloseq") #version 1.34.0
+library(Biostrings); packageVersion("Biostrings") #version 2.58.0
+library(ggplot2); packageVersion("ggplot2") #version 3.3.3
+library("plyr")
+library("vegan") #2.5-7
+##Install if not already
+#if (!requireNamespace("BiocManager", quietly = TRUE))
+#    install.packages("BiocManager")
+#BiocManager::install("decontam")
+library("decontam") 
+# install.packages("rgdal")
+library("rgdal")
+```
+
+```{r, echo=TRUE, results='hide'}
+getwd()
+setwd("/Users/ronjasteinbach/Desktop/Data Analysis UROP/ForRonja/UROP-Project-Spring2021/Paper_Scripts") #set your working directory
+```
+
+### Creating your Phyloseq object
+
+```{r}
+# Read in OTU Table with our taxa as columns not rows ---
+check.names=FALSE
+fill=TRUE
+
+Mala_OTU_Table <- otu_table(readRDS("seqtab.nochim"), taxa_are_rows = FALSE) #Flagged as false because taxa are columns in this case
+#taxa_names(Mala_OTU_Table) #check that they are "seq_1" etc.
+#sample_names(Mala_OTU_Table) #check that they are 10001 etc.
+
+#Read metadata file ----
+Mala_Sample_Data <- sample_data(read.csv("Mala_Sample_Data.csv", row.names=1, header=TRUE,stringsAsFactors=FALSE))
+#sample_names(Mala_Sample_Data) # check that they are 10001 etc.(must match the OTU Table)
+
+#Import taxonomy file ----
+Mala_Tax_Table <- as.matrix(Taxonomy <- read.csv("Mala_Tax_Table.csv", row.names=1, stringsAsFactors=FALSE))
+Mala_Tax_Table = tax_table(Mala_Tax_Table)
+#taxa_names(Mala_Tax_Table) # check that they are "seq_83" etc. (Must match the OTU table)
+
+#Merge everything into a single phyloseq object ----
+Mala_Physeq <- merge_phyloseq(Mala_OTU_Table, Mala_Sample_Data, Mala_Tax_Table)
+
+Mala_Physeq <- subset_samples(Mala_Physeq, sample_id!="Negative") #Take out all negative controls
+Mala_Physeq <- subset_samples(Mala_Physeq, level3!="Negative") #Take out all negative controls
+#Mala_Physeq #check number of taxa and samples - we had 350 taxa, 473 samples
+
+### Add the tree ----
+Mala_Tree <- read_tree("Mala_Tree.nwk")
+Mala_Physeq_Tree <- merge_phyloseq(Mala_Physeq, Mala_Tree)
+#Mala_Physeq_Tree #Make sure you have the same number of taxa, samples, and now tips to the tree - we have 350 taxa, 473 samples, 350 tips
+
+#_______________
+#Save you new Physeq Object
+#saveRDS(Mala_Physeq_Tree, "Mala_Physeq_Object") #Save phyloseq object that includes the tree
+```

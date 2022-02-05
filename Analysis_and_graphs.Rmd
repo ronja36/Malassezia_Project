@@ -1,0 +1,495 @@
+---
+title: "Malassezia Paper Script"
+author: "Ronja Steinbach -- ronja36@hawaii.edu"
+date: "Update 11/11/21"
+output:
+  html_document:
+    code_folding: hide
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+```{r setup chunk, setup, include = FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+if (!require('knitr')) install.packages('knitr'); library('knitr')
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, fig.align='center')
+########## Load packages
+# if you don't have them already in your library, the following code can be used
+# this will install the package if it does not already exist on your machine
+
+# load packages
+if (!require("pacman")) install.packages("pacman") # for rapid install if not in library
+
+# use pacman to load all the packages you are missing!
+pacman::p_load('knitr', 'lme4', 'lmerTest', 'effects', 'dplyr', 'plotrix', 'car', 'bookdown')
+
+library(phyloseq); packageVersion("phyloseq") #version 1.34.0
+library(Biostrings); packageVersion("Biostrings") #version 2.58.0
+library(ggplot2); packageVersion("ggplot2") #version 3.3.3
+library("plyr")
+library("vegan") #2.5-7
+library("decontam") 
+library("rgdal")
+library("ape")
+library(ggtree)
+library(treeio)
+library(scales)
+library(phyloseq)
+library(scales)
+library(viridis)
+library(ggstance)
+```
+### Set your working directory and read in the Phyloseq object
+```{r, echo=TRUE, results='hide'}
+getwd() # get working directory
+setwd("/Users/ronjasteinbach/Desktop/Data Analysis UROP/ForRonja/UROP-Project-Spring2021/Paper_Scripts/Mal_Paper_R_Materials") # set your working directory
+
+#Read in the Phyloseq Object ----
+physeq2 <- readRDS("Mala_Physeq_Object") #We are naming the phyloseq object we are working "physeq2"
+```
+### Subset so that sample sums > 10 and taxa > 0
+```{r}
+physeq2 #350 taxa, 473 samples
+
+#Creating a physeq object of the more abundant ones by pruning physeq to sample sums greater than 10 and taxa sums greater than 0 (needed so there are no zeroes for ordinations)
+physeq_abundant <- subset_samples(physeq2, sample_sums(physeq2)>10) #sample sums greater than 10
+physeq_abundant <- prune_taxa(taxa_sums(physeq_abundant) > 0, physeq_abundant) # sample sums > 10 and taxa > 0
+any(taxa_sums(physeq_abundant) == 0) #make sure all taxa sums are greater than 0
+physeq_abundant #279 taxa, 128 samples
+#saveRDS(physeq_abundant, "Mala_Physeq_Abundant") #Save file with only the abundant data
+physeq_abundant <- subset_samples(physeq_abundant, location_broad!= "Lab") #remove the data that came from lab samples and not Waimea
+physeq_abundant #279 taxa, 127 samples
+#write.csv(otu_table(physeq_abundant), file="279_taxa_otu_table.csv") #save OTU table
+```
+
+### Ordinations -- Bray Curtis Principal Coordinates Analysis (PCoA)
+Next we are going to make PCoA ordinations based on EMPO Level 3 Category and Location
+```{r, echo=TRUE, results='hide'}
+# Transform data to proportions as appropriate for Bray-Curtis distances by finding relative abundance/normalizing the data
+physeq_prop <- transform_sample_counts(physeq_abundant, function(OTU) OTU/sum(OTU))
+max(otu_table(physeq_prop)) #1
+sum(otu_table(physeq_prop)) #127 
+
+ord.physeq <- ordinate(physeq_prop, method="PCoA", distance="bray") #Ordinate using the Bray distance matrix
+
+# Plot the ordinations with multivariate t distributions and 95% CI Ellipses
+
+#----Color = EMPO Level 3 Category, Shape = Location
+ordplot <- plot_ordination(physeq_prop, ord.physeq, shape = "level3", color="location_broad", title="PCoA") #different shape for Level3 category, different color for location
+ordplot <- ordplot + stat_ellipse(type = "t") + scale_colour_grey() #add 95% CI Ellipses and change to grayscale
+print(ordplot)
+
+ordplot_color <- plot_ordination(physeq_prop, ord.physeq, shape = "level3", color="location_broad", title="PCoA") #different shape for Level3 category, different color for location'
+ordplot_color <- ordplot_color + stat_ellipse(type = "t")  #add 95% CI Ellipses
+print(ordplot_color)
+
+#---- Color and Shape = EMPO Level 3 Category
+ordplot_level3 <- plot_ordination(physeq_prop, ord.physeq, shape = "level3", color="level3", title="PCoA") #different shape for Level3 category, different color for location
+ordplot_level3 <- ordplot_level3 + stat_ellipse(type = "t") + scale_colour_grey() #add 95% CI Ellipses and change to grayscale
+print(ordplot_level3)
+
+ordplot_level3_color <- plot_ordination(physeq_prop, ord.physeq, shape = "level3", color= "level3", title="PCoA")  #different shape for Level3 category, different color for location'
+ordplot_level3_color <- ordplot_level3_color + stat_ellipse(type = "t") #add 95% CI Ellipses 
+print(ordplot_level3_color)
+
+# ---- Color and Shape = Location
+ordplot_location <- plot_ordination(physeq_prop, ord.physeq, shape = "location_broad", color="location_broad", title="PCoA") #different shape for location category, different color for location
+ordplot_location <- ordplot_location + stat_ellipse(type = "t") + scale_colour_grey() #add 95% CI Ellipses and change to grayscale
+print(ordplot_location)
+
+ordplot_location_color <- plot_ordination(physeq_prop, ord.physeq, shape = "location_broad", color="location_broad", title="PCoA") #different shape for location category, different color for location
+ordplot_location_color <- ordplot_location_color + stat_ellipse(type = "t") #add 95% CI Ellipses
+print(ordplot_location_color)
+
+#Save ordinations ---
+#pdf("ordplotlevel3.pdf")
+#ordplot_level3
+#dev.off()
+
+#pdf("ordplotlevel3_color.pdf")
+#ordplot_level3_color
+#dev.off()
+
+#pdf("ordplotlocation.pdf")
+#ordplot_location
+#dev.off()
+
+#pdf("ordplotlocation_color.pdf")
+#ordplot_location_color
+#dev.off()
+
+
+#my_colors <- c("red", "orange", "yellow", "green", "blue")
+#names(my_colors) <- #levels(factor(c(levels(sample_data(physeq_prop)$level3))))
+#my_scale <- scale_fill_manual(name = "level3", values = my_colors)
+```
+### PERMANOVA and Beta Dispersion
+```{r, echo=TRUE, results='hide'}
+# PERMANOVA ---------------------
+physeq.df <- data.frame(sample_data(physeq_prop)) #make a data frame for the sample/metadata
+
+physeq_dist_bray <- phyloseq::distance(physeq_prop, method="bray") #calculate the Bray distance matrix
+
+adonis2(physeq_dist_bray ~ level3 * location_broad, data=physeq.df) # calculate dissimilarity
+
+
+#Betadispersion/Post-Hoc Tests (Unnecessary - no signficant results from PERMANOVA) -------------------
+level3_factor <- factor(sample_data(physeq_prop)$level3)
+exo_disper <- betadisper(physeq_dist_bray, level3_factor)
+exo_disper
+
+# Plots (not helpful) ---
+#plot(exo_disper)
+#boxplot(exo_disper, ylab = "Distance to centroid", xlab="Sample Type")
+```
+
+```{r}
+physeq_abundant #279 taxa, 127 samples
+melt_abund <- psmelt(physeq_abundant)
+A <- subset(melt_abund, Letter=="A") #6604
+B <- subset(melt_abund, Letter=="B") #0
+C <- subset(melt_abund, Letter=="C") #0
+D <- subset(melt_abund, Letter=="D")  #4064
+E <- subset(melt_abund, Letter=="E") #0
+F <- subset(melt_abund, Letter=="F") #0
+G <- subset(melt_abund, Letter=="G") #889
+H <- subset(melt_abund, Letter=="H") #0
+I <- subset(melt_abund, Letter=="I") #2921
+J <- subset(melt_abund, Letter=="J") #20701
+K <- subset(melt_abund, Letter=="K") #127
+L <- subset(melt_abund, Letter=="L") #127
+
+Asum <- sum(A$Abundance) #239591
+Dsum <- sum(D$Abundance) #34312
+Gsum <- sum(G$Abundance) #24568
+Isum <- sum(I$Abundance) #338
+Jsum <- sum(J$Abundance) #1662639
+Ksum <- sum(K$Abundance) #22
+Lsum <- sum(L$Abundance) #44
+
+Aanimal <- subset(A, level3=="Animal_corpus") #1976
+Aplant <- subset(A, level3=="Plant_corpus") #1820
+Asurface <- subset(A, level3=="Surface") #1820
+Asediment <- subset(A, level3=="Sediment") #364
+Awater <- subset(A, level3=="Water") #624
+
+Danimal <- subset(D, level3=="Animal_corpus") #1216
+Dplant <- subset(D, level3=="Plant_corpus") #1120
+Dsurface <- subset(D, level3=="Surface") #1120
+Dsediment <- subset(D, level3=="Sediment") #224
+Dwater <- subset(D, level3=="Water") #384
+
+Ganimal <- subset(G, level3=="Animal_corpus") #266
+Gplant <- subset(G, level3=="Plant_corpus") #245
+Gsurface <- subset(G, level3=="Surface") #245
+Gsediment <- subset(G, level3=="Sediment") #49
+Gwater <- subset(G, level3=="Water") #84
+
+Ianimal <- subset(I, level3=="Animal_corpus") #874
+Iplant <- subset(I, level3=="Plant_corpus") #805
+Isurface <- subset(I, level3=="Surface") #805
+Isediment <- subset(I, level3=="Sediment") #161
+Iwater <- subset(I, level3=="Water") #276
+
+Janimal <- subset(J, level3=="Animal_corpus") #6194
+Jplant <- subset(J, level3=="Plant_corpus") #5705
+Jsurface <- subset(J, level3=="Surface") #5705
+Jsediment <- subset(J, level3=="Sediment") #1141
+Jwater <- subset(J, level3=="Water") #1956
+
+Kanimal <- subset(K, level3=="Animal_corpus") #38
+Kplant <- subset(K, level3=="Plant_corpus") #35
+Ksurface <- subset(K, level3=="Surface") #35
+Ksediment <- subset(K, level3=="Sediment") #7
+Kwater <- subset(K, level3=="Water") #12
+
+Lanimal <- subset(L, level3=="Animal_corpus") #38
+Lplant <- subset(L, level3=="Plant_corpus") #35
+Lsurface <- subset(L, level3=="Surface") #35
+Lsediment <- subset(L, level3=="Sediment") #7
+Lwater <- subset(L, level3=="Water") #12
+
+#_________ADGIJKL Abundance per level 3 category
+Aanimalsum <- sum(Aanimal$Abundance) #26205
+Aplantsum <- sum(Aplant$Abundance) #194247
+Asurfacesum <- sum(Asurface$Abundance) #52
+Asedimentsum <- sum(Asediment$Abundance) #0
+Awatersum <- sum(Awater$Abundance) #19087
+
+Danimalsum <- sum(Danimal$Abundance) #15575
+Dplantsum <- sum(Dplant$Abundance) #18735
+Dsurfacesum <- sum(Dsurface$Abundance) #0
+Dsedimentsum <- sum(Dsediment$Abundance) #0
+Dwatersum <- sum(Dwater$Abundance) #2
+
+Ganimalsum <- sum(Ganimal$Abundance) #24567
+Gplantsum <- sum(Gplant$Abundance) #1
+Gsurfacesum <- sum(Gsurface$Abundance) #0
+Gsedimentsum <- sum(Gsediment$Abundance) #0
+Gwatersum <- sum(Gwater$Abundance) #0
+
+Ianimalsum <- sum(Ianimal$Abundance) #167
+Iplantsum <- sum(Iplant$Abundance) #29
+Isurfacesum <- sum(Isurface$Abundance) #94
+Isedimentsum <- sum(Isediment$Abundance) #0
+Iwatersum <- sum(Iwater$Abundance) #48
+
+Janimalsum <- sum(Janimal$Abundance) #154291
+Jplantsum <- sum(Jplant$Abundance) #205662
+Jsurfacesum <- sum(Jsurface$Abundance) #1206494
+Jsedimentsum <- sum(Jsediment$Abundance) #449
+Jwatersum <- sum(Jwater$Abundance) #95743
+
+Kanimalsum <- sum(Kanimal$Abundance) #0
+Kplantsum <- sum(Kplant$Abundance) #22
+Ksurfacesum <- sum(Ksurface$Abundance) #0
+Ksedimentsum <- sum(Ksediment$Abundance) #0
+Kwatersum <- sum(Kwater$Abundance) #0
+
+Lanimalsum <- sum(Lanimal$Abundance) #0
+Lplantsum <- sum(Lplant$Abundance) #44
+Lsurfacesum <- sum(Lsurface$Abundance) #0
+Lsedimentsum <- sum(Lsediment$Abundance) #0
+Lwatersum <- sum(Lwater$Abundance) #0
+
+#______________________
+AOahu <- subset(A, location_broad=="Oahu") #5928
+AWoods_Hole <- subset(A, location_broad=="Woods_Hole") #312
+AWashington <- subset(A, location_broad=="Washington") #364
+
+DOahu <- subset(D, location_broad=="Oahu") #3648
+DWoods_Hole <- subset(D, location_broad=="Woods_Hole") #192
+DWashington <- subset(D, location_broad=="Washington") #224
+
+GOahu <- subset(G, location_broad=="Oahu") #798
+GWoods_Hole <- subset(G, location_broad=="Woods_Hole") #42
+GWashington <- subset(G, location_broad=="Washington") #49
+
+IOahu <- subset(I, location_broad=="Oahu") #2622
+IWoods_Hole <- subset(I, location_broad=="Woods_Hole") #138
+IWashington <- subset(I, location_broad=="Washington") #161
+
+JOahu <- subset(J, location_broad=="Oahu") #18582
+JWoods_Hole <- subset(J, location_broad=="Woods_Hole") #978
+JWashington <- subset(J, location_broad=="Washington") #1141
+
+KOahu <- subset(K, location_broad=="Oahu") #114
+KWoods_Hole <- subset(K, location_broad=="Woods_Hole") #6
+KWashington <- subset(K, location_broad=="Washington") #7
+
+LOahu <- subset(L, location_broad=="Oahu") #114
+LWoods_Hole <- subset(L, location_broad=="Woods_Hole") #6
+LWashington <- subset(L, location_broad=="Washington") #7
+
+#_________ADGIJKL Abundance per State
+AOahusum <- sum(AOahu$Abundance) #239554
+AWoods_Holesum <- sum(AWoods_Hole$Abundance) #6
+AWashingtonsum <- sum(AWashington$Abundance) #31
+
+DOahusum <- sum(DOahu$Abundance) #34312
+DWoods_Holesum <- sum(DWoods_Hole$Abundance) #0
+DWashingtonsum <- sum(DWashington$Abundance) #0
+
+GOahusum <- sum(GOahu$Abundance) #1
+GWoods_Holesum <- sum(GWoods_Hole$Abundance) #0
+GWashingtonsum <- sum(GWashington$Abundance) #24567
+
+IOahusum <- sum(IOahu$Abundance) #154
+IWoods_Holesum <- sum(IWoods_Hole$Abundance) #26
+IWashingtonsum <- sum(IWashington$Abundance) #158
+
+JOahusum <- sum(JOahu$Abundance) #1529389
+JWoods_Holesum <- sum(JWoods_Hole$Abundance) #94339
+JWashingtonsum <- sum(JWashington$Abundance) #38911
+
+KOahusum <- sum(KOahu$Abundance) #22
+KWoods_Holesum <- sum(KWoods_Hole$Abundance) #0
+KWashingtonsum <- sum(KWashington$Abundance) #0
+
+LOahusum <- sum(LOahu$Abundance) #0
+LWoods_Holesum <- sum(LWoods_Hole$Abundance) #44
+LWashingtonsum <- sum(LWashington$Abundance) #0
+```
+### Heatmap
+```{r}
+#Relative Abundance Heatmaps and Data Transformations
+
+# Surface always = rock swab (the only type of surface sampling we did)
+dat <- read.csv("rel_abund_L3.csv")
+dat
+#Cube Root of Relative Abundance Heatmap (sample type adds up to 1)
+# Surface always = rock swab (the only type of surface sampling we did)
+dat$cube_root_rel <- (dat$Relative.Abundance)^(1/3) # make a new column with the square root of the relative abundance
+heatmap_cube_root_rel <- ggplot(dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = cube_root_rel), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_cube_root_rel.pdf")
+heatmap_cube_root_rel
+#dev.off()
+
+#Raw Abundance Heatmap
+# Surface always = rock swab (the only type of surface sampling we did)
+raw_dat <- read.csv("Raw_Reads.csv")
+raw_dat$log10_Raw <- log10(raw_dat$Raw_Reads)
+raw_dat$log10_Raw[which(!is.finite(raw_dat$log10_Raw))] <- 0
+heatmap_raw <- ggplot(raw_dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = log10_Raw), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("Raw_log_heatmap.pdf")
+heatmap_raw
+#dev.off()
+#-------------------------------------------
+
+#--------
+#Relative Abundance
+heatmap <- ggplot(dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = Relative.Abundance), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_rel.pdf")
+heatmap
+#dev.off()
+#--------
+#Log of Relative Abundance Heatmap (sample type adds up to 1)
+# Surface always = rock swab (the only type of surface sampling we did)
+
+dat$log10_rel <- log10(dat$Relative.Abundance) # take the log of the relative abundance
+dat$log10_rel[which(!is.finite(dat$log10_rel))] <- 0 #replace all infinite values with 0 (since log 0 = inf)
+heatmap_log_rel <- ggplot(dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = log10_rel), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_log_rel.pdf")
+heatmap_log_rel
+#dev.off()
+#--------
+#Log Plus One of Relative Abundance Heatmap (sample type adds up to 1)
+# Surface always = rock swab (the only type of surface sampling we did)
+dat$rel_one <- dat$Relative.Abundance + 1 # make a new data frame with relative abundance plus one
+dat$log_rel_one <- log10(dat$rel_one) # take the log of relative abundance plus one (so it's positive)
+heatmap_log_rel_one <- ggplot(dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = log_rel_one), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_log_rel.pdf")
+heatmap_log_rel_one
+#dev.off()
+#--------
+#Hellinger of Relative Abundance Heatmap (sample type adds up to 1)
+# Surface always = rock swab (the only type of surface sampling we did)
+dat$sqrt_rel <- sqrt(dat$Relative.Abundance) # make a new column with the square root of the relative abundance
+dat$Hellinger <- log10(dat$sqrt_rel) # make a new column with the log of the square root of relative abundance
+heatmap_Hellinger <- ggplot(dat, aes(Level3, Clade)) +
+  geom_tile(aes(fill = Hellinger), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_Hellinger.pdf")
+heatmap_Hellinger
+#dev.off()
+#--------
+
+# Geography Heatmaps --------
+dat_loc_rel <- read.csv("rel_abund_location.csv")
+dat_loc_rel
+#Relative Abundance
+heatmap_loc_rel <- ggplot(dat_loc_rel, aes(State, Clade)) +
+  geom_tile(aes(fill = Rel_Abundance), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+
+heatmap_loc_rel
+#-------
+dat_loc_rel$cube_root_rel <- (dat_loc_rel$Rel_Abundance)^(1/3) # make a new column with the square root of the relative abundance
+heatmap_loc_rel_cube <- ggplot(dat_loc_rel, aes(State, Clade)) +
+  geom_tile(aes(fill = cube_root_rel), colour = "white") +
+  scale_fill_gradient(low = "white", high = "black") + theme_bw()
+#pdf("heatmap_location_cube_root.pdf")
+heatmap_loc_rel_cube
+#dev.off()
+
+```
+
+##Metadata at tips of the Phylogeny
+```{r}
+# Location---
+#Plot the tree with dots in various colors representing the broad location
+plot_tree(physeq_prop, color="location_broad", base.spacing = 0.03, text.size=1)
+
+
+#Level 3 Ontology----
+#Plot the tree with dots in various colors representing the level 3 ontology category for the host
+plot_tree(physeq_prop, color="level3", shape="level3", base.spacing = 0.1)
+?plot_tree
+
+#Using ggtree with a scale bar
+#pdf("treelevel3.pdf")
+ggtree(physeq_prop, ladderize = FALSE ) +
+    geom_tippoint(aes( x = x + hjust, color=level3, shape=level3), size=1, alpha=.75) +
+    scale_color_brewer("level3", palette="Greys") +
+    theme_tree2(legend.position='right') 
+#dev.off()
+
+#pdf("treelevel3_color.pdf")
+ggtree(physeq_prop, ladderize = FALSE ) +
+    geom_point2(aes( x = x + hjust, color=level3, shape=level3), size=1, alpha=.75) +
+    theme_tree2(legend.position='right') 
+#dev.off()
+
+#pdf("treeloc_color.pdf")
+ggtree(physeq_prop, ladderize = FALSE ) +
+    geom_point2(aes(x = x + hjust,  color=location_broad, shape=location_broad), size=1, alpha=.75) +
+    theme_tree2(legend.position='right') 
+#dev.off()
+
+```
+
+### Bar Chart
+```{r}
+# EMPO Level 3 Categories add up to 1-----
+#pdf("bar_rel_abund_color.pdf")
+ggplot(dat, aes(x = Level3, y=Relative.Abundance, fill = Clade)) + geom_bar(stat="identity")
+#dev.off()
+
+#pdf("bar_rel_abund.pdf")
+ggplot(dat, aes(x = Level3, y=Relative.Abundance, fill = Clade)) + geom_bar(stat="identity") + scale_fill_grey()
+#dev.off()
+
+#Make sure phylogeny clade colors are the same as bar chart colors
+hex_codes1 <- hue_pal()(7)  # Identify hex codes
+hex_codes1  
+show_col(hex_codes1)
+
+
+# Clades add up to 1 ----- should be animal, plant, sediment, rock swab water
+clade_rep <- read.csv("rel_representation_clades_inL3.csv")
+
+clade_rep$Level3 <- factor(clade_rep$Level3, levels = c("Animal_corpus", "Plant_corpus", "Sediment", "Rock_swab", "Water"))
+
+#pdf("rep_L3_per_clade_color.pdf")
+ggplot(clade_rep, aes(x = Clade, y=Relative_Rep, fill = Level3)) + geom_bar(stat="identity")
+#dev.off()
+
+#pdf("rep_L3_per_clade_grey.pdf")
+ggplot(clade_rep, aes(x = Clade, y=Relative_Rep, fill = Level3)) + geom_bar(stat="identity") + scale_fill_grey()
+#dev.off()
+
+#------
+location_rel_State
+location_rel_clade
+
+```
+
+### Host Co-Amplification
+Look at samples with more and less than 50% host co-amplification and plot
+
+```{r}
+#Read in the old Phyloseq Object that included non-Exobasidiomycete reads ----
+physeq <- readRDS("physeq1") #We are naming the phyloseq object we are working "physeq"
+exops <- subset_taxa(physeq, Class=="Exobasidiomycetes")
+tot_samps <- sample_sums(physeq) # the number of taxa found in each sample
+length(tot_samps) #473
+exosamps <- sample_sums(exops) #the number of class exobasidiomycete taxa found in each sample
+length(exosamps) #473
+host_ratio <- exosamps/tot_samps
+sample_data(exops)$host_ratio <- host_ratio #add the host ratio as another column into the metadata
+length(host_ratio) #473
+success <- which(host_ratio > 0.5)
+length(success) #211
+```
