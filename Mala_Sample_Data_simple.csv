@@ -1,0 +1,465 @@
+location_broad,site_name,Sample Type,collection_date,host,lat,long,level3
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideRocks,Dictyoda_sp,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Geliadiella_sp,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Acanthophora_sp,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Laurencia_sp,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Sand,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Sediment,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,OutsideRocks,MarineInvert,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Sediment,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,OutsideRocks,Water Sample,20181025,Nonhost,21.63852,-158.07061,Water
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Sediment,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Sediment,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,OutsideRocks,Rock Swab,20181025,Nonhost,21.63852,-158.07061,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Rock Swab,20181025,Nonhost,21.63854,-158.07167,Surface
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Limu,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideOcean,Sediment,20181025,Nonhost,21.63854,-158.07167,Sediment
+Oahu,Ridge,Water Sample,20190701,Nonhost,21.59049,-157.95499,Water
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,DrumRoad,Water Sample,20180731,Nonhost,21.6203,-158.01466,Water
+Oahu,OutsideRocks,Coral,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Coral,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,MarineInvert,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,CCA,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,CCA,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,Beach,Water Sample,20190703,Nonhost,21.64051,-158.06264,Water
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,OutsideOcean,Water Sample,20181025,Nonhost,21.63854,-158.07167,Water
+Oahu,OutsideRocks,Coral,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Coral,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Coral,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,MarineInvert,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,CCA,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,OutsideRocks,CCA,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,Beach,Water Sample,20190703,Nonhost,21.64051,-158.06264,Water
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,OutsideOcean,Water Sample,20181025,Nonhost,21.63854,-158.07167,Water
+Oahu,OutsideRocks,Coral,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Coral,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,MarineInvert,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,MarineInvert,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,CCA,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,UppersBeach,Sand,20190620,Nonhost,21.63892,-158.07127,Sediment
+Oahu,OutsideRocks,Water Sample,20181025,Nonhost,21.63852,-158.07061,Water
+Oahu,OutsideRocks,Ground_yellow,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Cauliflower_red,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Sponge,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Eucidaris_metularia,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Purple,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,OutsideRocks,Water Sample,20181025,Nonhost,21.63852,-158.07061,Water
+Oahu,OutsideRocks,Ground_yellow,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Lobata_yellow,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Sponge,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Eucidaris_metularia,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,Hyrtios_sp,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Purple,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,OutsideOcean,Water Sample,20181025,Nonhost,21.63854,-158.07167,Water
+Oahu,OutsideRocks,Rice,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Lobata_yellow,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Sponge,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,Hyrtios_sp,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Purple,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,WaimeaBay,Sediment,20190620,Nonhost,21.64272,-158.06626,Sediment
+Oahu,OutsideOcean,Water Sample,20181025,Nonhost,21.63854,-158.07167,Water
+Oahu,OutsideRocks,Rice,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Lobata_yellow,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Sponge,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,Eucidaris_metularia,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Hyrtios_sp,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Red,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Purple,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,OutsideRocks,Cauliflower_red,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Rice,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Ground_blue,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideOcean,Sponge,20181025,Animal,21.63854,-158.07167,Animal_corpus
+Oahu,OutsideRocks,Eucidaris_metularia,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideRocks,Tripneustestes_sp_shell_contents,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,OutsideOcean,Red,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,OutsideRocks,Pink,20181025,Plant,21.63852,-158.07061,Plant_corpus
+Oahu,UppersBeach,Sand,20190620,Nonhost,21.63892,-158.07127,Sediment
+Oahu,OutsideRocks,Echinometra_mathaei,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,ThreeTablesBeach,Jania_Unkown,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,TwinRocks,Flatworm,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,TwinRocks,Fireworm_Unkown_polychaete,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,Flatworm,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,TwinRocks,Dichotoma_Unkown,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Nudibranch,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,ThreeTablesBeach,Cone_snail,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,WaimeaBay,Sponge,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,SharksCove,CCA,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,UppersBeach,Sediment,20190620,Nonhost,21.63892,-158.07127,Sediment
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,Ridge,Water Sample,20190701,Nonhost,21.59049,-157.95499,Water
+Oahu,ThreeTablesBeach,Coral,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,Coral,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Sediment,20190620,Nonhost,21.63677,-158.07189,Sediment
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,WaimeaBay,CCA,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,WaimeaBay,Coral,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,UppersBeach,Coral,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,SharksCove,Coral,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,OutsideOcean,Limu,20181025,Plant,21.63854,-158.07167,Plant_corpus
+Oahu,SharksCove,Water Sample,20191621,Nonhost,21.64884,-158.06567,Water
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,CCA,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,WaimeaBay,CCA,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,OutsideRocks,MarineInvert,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,SharksCove,CCA,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,UppersBeach,Coral,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,CCA,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,Ridge,Water Sample,20190701,Nonhost,21.59049,-157.95499,Water
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Coral,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,UppersBeach,Coral,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,WaimeaBay,Coral,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,OutsideRocks,Water Sample,20181025,Nonhost,21.63852,-158.07061,Water
+Oahu,UppersBeach,CCA,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,SharksCove,Coral,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,WaimeaBay,Water Sample,20191620,Nonhost,21.64272,-158.06626,Water
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,UppersBeach,Coral,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,UppersBeach,Coral,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,SharksCove,Rock Swab,20190621,Nonhost,21.64884,-158.06567,Surface
+Oahu,WaimeaBay,Sediment,20190620,Nonhost,21.64272,-158.06626,Sediment
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,UppersBeach,CCA,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,ThreeTablesBeach,Sediment,20190621,Nonhost,21.64499,-158.06658,Sediment
+Oahu,UppersBeach,Rock Swab,20190620,Nonhost,21.63892,-158.07127,Surface
+Oahu,SharksCove,CCA,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,WaimeaBay,Coral,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,WaimeaBay,Sediment,20190620,Nonhost,21.64272,-158.06626,Sediment
+Oahu,ThreeTablesBeach,Sediment,20190621,Nonhost,21.64499,-158.06658,Sediment
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,WaimeaBay,MarineInvert,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,ThreeTablesBeach,CCA,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Woods_Hole,Woods_hole,Green_algae,NA,,NA,NA,Plant_corpus
+Oahu,SharksCove,Rock Swab,20190621,,21.64884,-158.06567,Surface
+Oahu,WaimeaBay,Animal,20190620,,21.64272,-158.06626,Animal_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,WaimeaBay,Animal,20190620,,21.64272,-158.06626,Animal_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Woods_Hole,Woods_hole,Sponge_slurry,NA,,NA,NA,Animal_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,,21.64499,-158.06658,Surface
+Oahu,Beach,Water Sample,20190703,,21.64051,-158.06264,Water
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Woods_Hole,Woods_hole,Periwinkle_snail,NA,,NA,NA,Animal_corpus
+Oahu,SharksCove,Sediment,20190621,,21.64884,-158.06567,Sediment
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,Animal,20190620,,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Woods_Hole,Woods_hole,Squid_eggs,NA,,NA,NA,Animal_corpus
+Oahu,TwinRocks,Sediment,20190620,,21.63677,-158.07189,Sediment
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,WaimeaBay,Water Sample,20191620,,21.64272,-158.06626,Water
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Plant,20190620,,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,Animal,20190620,,21.63892,-158.07127,Animal_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Woods_Hole,Woods_hole,Slipper_shell_snail,NA,,NA,NA,Animal_corpus
+Oahu,TwinRocks,Rock Swab,20190620,Nonhost,21.63677,-158.07189,Surface
+Oahu,WaimeaBay,CCA,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,MarineInvert,20190621,Animal,21.64884,-158.06567,Animal_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,TwinRocks,Water Sample,20191620,Nonhost,21.63677,-158.07189,Water
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,Sediment,20190621,Nonhost,21.64499,-158.06658,Sediment
+Oahu,ThreeTablesBeach,Limu,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,UppersBeach,Limu,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,CCA,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Woods_Hole,Woods_hole,Animal,NA,,NA,NA,Animal_corpus
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,WaimeaBay,Coral,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,UppersBeach,CCA,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,CCA,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,UppersBeach,Water Sample,20191620,Nonhost,21.63892,-158.07127,Water
+Oahu,TwinRocks,Coral,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,Coral,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,UppersBeach,CCA,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Woods_Hole,Woods_hole,Plant,NA,,NA,NA,Plant_corpus
+Oahu,OutsideRocks,MarineInvert,20181025,Animal,21.63852,-158.07061,Animal_corpus
+Oahu,Beach,Water Sample,20180625,Nonhost,21.64051,-158.06264,Water
+Oahu,WaimeaBay,CCA,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,UppersBeach,MarineInvert,20190620,Animal,21.63892,-158.07127,Animal_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Coral,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Limu,20190621,Plant,21.64884,-158.06567,Plant_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,,21.64499,-158.06658,Surface
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,,21.64499,-158.06658,Surface
+Oahu,TwinRocks,Rock Swab,20190620,,21.63677,-158.07189,Surface
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,Animal,20190620,,21.63892,-158.07127,Animal_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,UppersBeach,Rock Swab,20190620,,21.63892,-158.07127,Surface
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,WaimeaBay,Animal,20190620,,21.64272,-158.06626,Animal_corpus
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,UppersBeach,Water Sample,20191620,,21.63892,-158.07127,Water
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,TwinRocks,Water Sample,20191620,,21.63677,-158.07189,Water
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,TwinRocks,Rock Swab,20190620,,21.63677,-158.07189,Surface
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,WaimeaBay,Animal,20190620,,21.64272,-158.06626,Animal_corpus
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,Water Sample,20191621,,21.64499,-158.06658,Water
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,SharksCove,Sediment,20190621,,21.64884,-158.06567,Sediment
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,ThreeTablesBeach,Animal,20190621,,21.64499,-158.06658,Animal_corpus
+Oahu,SharksCove,Plant,20190621,,21.64884,-158.06567,Plant_corpus
+Oahu,SharksCove,Water Sample,20191621,,21.64884,-158.06567,Water
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,SharksCove,Rock Swab,20190621,,21.64884,-158.06567,Surface
+Oahu,TwinRocks,Animal,20190620,,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,Plant,20190621,,21.64499,-158.06658,Plant_corpus
+Oahu,UppersBeach,Animal,20190620,,21.63892,-158.07127,Animal_corpus
+Oahu,UppersBeach,Plant,20190620,,21.63892,-158.07127,Plant_corpus
+Oahu,SharksCove,Animal,20190621,,21.64884,-158.06567,Animal_corpus
+Oahu,ThreeTablesBeach,Water Sample,20191621,,21.64499,-158.06658,Water
+Oahu,WaimeaBay,Animal,20190620,,21.64272,-158.06626,Animal_corpus
+Oahu,WaimeaBay,Plant,20190620,,21.64272,-158.06626,Plant_corpus
+Washington,Washington,Animal,NA,,NA,NA,Animal_corpus
+Oahu,ThreeTablesBeach,Rock Swab,20190621,Nonhost,21.64499,-158.06658,Surface
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,ThreeTablesBeach,MarineInvert,20190621,Animal,21.64499,-158.06658,Animal_corpus
+Oahu,TwinRocks,MarineInvert,20190620,Animal,21.63677,-158.07189,Animal_corpus
+Oahu,TwinRocks,Limu,20190620,Plant,21.63677,-158.07189,Plant_corpus
+Oahu,WaimeaBay,Limu,20190620,Plant,21.64272,-158.06626,Plant_corpus
+Oahu,WaimeaBay,Coral,20190620,Animal,21.64272,-158.06626,Animal_corpus
+Oahu,UppersBeach,Jania,20190620,Plant,21.63892,-158.07127,Plant_corpus
+Oahu,ThreeTablesBeach,Jania_Unkown,20190621,Plant,21.64499,-158.06658,Plant_corpus
+Washington,Washington,Clathria_pennata,NA,Whole_animal,NA,NA,Animal_corpus
